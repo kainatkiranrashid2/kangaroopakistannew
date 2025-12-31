@@ -175,7 +175,7 @@ const Gallery: React.FC = () => {
 
       {/* Empty State */}
       {filteredImages.length === 0 && (
-        <div className="py-32 text-center text-gray-400">
+        <div className="py-16 text-center text-gray-400">
           <div className="text-6xl mb-4">📸</div>
           <p className="text-xl font-medium">
             No photos found in this category yet.

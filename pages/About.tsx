@@ -198,7 +198,7 @@ const About: React.FC = () => {
       </section>
 
       {/* 4. Leadership Section */}
-      <section className="py-32">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-black text-gray-900 mb-4">
             Our Visionary Team
@@ -232,7 +232,7 @@ const About: React.FC = () => {
       </section>
 
       {/* 5. Certificates Wall */}
-      <section className="py-32 bg-indigo-900 text-white rounded-[60px] lg:rounded-[100px] mx-4 lg:mx-8 mb-8 relative overflow-hidden">
+      <section className="py-16 bg-indigo-900 text-white rounded-[60px] lg:rounded-[100px] mx-4 lg:mx-8 mb-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 blur-3xl rounded-full"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
