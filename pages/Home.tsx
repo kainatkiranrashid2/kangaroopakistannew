@@ -152,13 +152,13 @@ const Home: React.FC = () => {
         <div className="absolute bottom-10 right-10 w-16 h-16 border-2 border-white/20 rounded-full animate-spin-slow" style={{animationDelay: '1s'}}></div>
         <div className="absolute top-1/2 left-1/4 w-12 h-12 border-2 border-white/10 rounded-full animate-spin-slow" style={{animationDelay: '2s'}}></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center text-white">
+        <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-10 relative">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-left text-white">
             {stats.map((stat, idx) => (
               <div key={idx} className="space-y-2 animate-fade-in-up group" style={{animationDelay: `${idx * 0.2}s`}}>
-                <div className="text-5xl lg:text-6xl font-black group-hover:scale-110 transition-transform duration-300 animate-count-up">{stat.value}</div>
-                <div className="text-indigo-100 font-medium tracking-wide uppercase text-sm group-hover:text-white transition-colors">{stat.label}</div>
-                <div className="w-8 h-1 bg-white/30 mx-auto rounded-full group-hover:bg-white/60 transition-colors"></div>
+                <div className="text-left text-3xl md:text-4xl lg:text-5xl font-black group-hover:scale-110 transition-transform duration-300 animate-count-up">{stat.value}</div>
+                <div className="text-left text-indigo-100 font-medium tracking-wide uppercase text-sm group-hover:text-white transition-colors">{stat.label}</div>
+                <div className="text-left w-8 h-1 bg-white/30 ml-0 rounded-full group-hover:bg-white/60 transition-colors"></div>
               </div>
             ))}
           </div>
