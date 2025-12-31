@@ -232,22 +232,6 @@ const ContestDetail: React.FC = () => {
                  </div>
                </div>
             </div>
-
-            {data.faqs && data.faqs.length > 0 && (
-              <div className="pt-8">
-                <h2 className="text-3xl font-black text-gray-900 mb-8">Frequently Asked Questions</h2>
-                <div className="space-y-4">
-                   {data.faqs.map((faq, fidx) => (
-                     <div key={fidx} className="p-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
-                        <h4 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                           <span className="text-indigo-600">Q.</span> {faq.q}
-                        </h4>
-                        <p className="text-gray-500 text-sm pl-6">{faq.a}</p>
-                     </div>
-                   ))}
-                </div>
-              </div>
-            )}
           </div>
         );
     }
@@ -271,7 +255,7 @@ const ContestDetail: React.FC = () => {
               </div>
             </div>
             
-            <div className="flex-1 w-full max-w-md">
+            <div className="flex-1 w-full max-w-md lg:mr-32">
                <div className="bg-white/10 backdrop-blur-xl rounded-[40px] p-8 border border-white/20 shadow-2xl">
                   <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                     <span className="animate-pulse">🔔</span> 
@@ -281,15 +265,22 @@ const ContestDetail: React.FC = () => {
                     <div className="flex gap-4 items-center">
                       <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">📅</div>
                       <div>
-                        <p className="text-indigo-100 font-bold uppercase tracking-wider text-[10px]">Registration Deadline</p>
-                        <p className="font-bold">{data?.dates.registration}</p>
+                        <p className="text-indigo-100 font-bold uppercase tracking-wider text-[14px]">Registration Date</p>
+                        <p className="font-bold text-[14px]">{data?.dates.registration}</p>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center">
                       <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">🏁</div>
                       <div>
-                        <p className="text-indigo-100 font-bold uppercase tracking-wider text-[10px]">Contest Day</p>
-                        <p className="font-bold">{data?.dates.contest}</p>
+                        <p className="text-indigo-100 font-bold uppercase tracking-wider text-[14px]">Contest Day</p>
+                        <p className="font-bold text-[14px]">{data?.dates.contest}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-4 items-center">
+                      <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">🏁</div>
+                      <div>
+                        <p className="text-indigo-100 font-bold uppercase tracking-wider text-[14px]">Result Date:</p>
+                        <p className="font-bold text-[14px]">{data?.dates.results}</p>
                       </div>
                     </div>
                   </div>

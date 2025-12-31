@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                 <p className="text-gray-500 text-sm">
                   Landline: +92 42 37180505
                   <br />
-                  Mobile: +92-333-2111399
+                  Mobile: +92 321 8403033
                 </p>
               </div>
               <div className="p-8 bg-gray-50 rounded-[30px] border border-gray-100">
@@ -38,8 +38,7 @@ const Contact: React.FC = () => {
                 <h4 className="font-bold text-xl mb-2">Email Us</h4>
                 <p className="text-gray-500 text-sm">
                   info@kangaroopakistan.org
-                  <br />
-                  support@kangaroopakistan.org
+                  
                 </p>
               </div>
               <div className="p-8 bg-gray-50 rounded-[30px] border border-gray-100">

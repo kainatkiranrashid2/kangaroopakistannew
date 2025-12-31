@@ -30,7 +30,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 overflow-hidden whitespace-nowrap">
           <div className="animate-marquee inline-block">
             <span className="mx-8 font-medium text-sm">🔥 <b>IKMC 2026:</b> Registrations Now Open</span>
-            <span className="mx-8 font-medium text-sm">📅 <b>Deadline:</b> Feb 6, 2026</span>
+            <span className="mx-8 font-medium text-sm">📅 <b>IKMC registration Deadline:</b> Feb 6, 2026</span>
             <span className="mx-8 font-medium text-sm">🏆 <b>Results:</b> IKSC 2025 Results are Out!</span>
             <span className="mx-8 font-medium text-sm">⚖️ <b>Legal:</b> IP Tribunal Lahore Official Notice</span>
             {/* Duplicate for seamless marquee */}
@@ -143,6 +143,76 @@ const Home: React.FC = () => {
               <div key={idx} className="space-y-2">
                 <div className="text-5xl lg:text-6xl font-black">{stat.value}</div>
                 <div className="text-indigo-100 font-medium tracking-wide uppercase text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contest Calendars */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Contest Calendars</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">Stay updated with important dates for all our international contests.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {Object.values(CONTESTS).map((contest) => (
+              <div
+                key={contest.id}
+                className={`group p-8 bg-gradient-to-br ${contest.bgGradient} text-white rounded-[40px] shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 relative overflow-hidden`}
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-8 translate-x-8"></div>
+                
+                <div className="mb-6 flex items-center gap-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                    <img 
+                      src={contest.logoUrl} 
+                      alt={contest.name} 
+                      className="h-10 w-10 object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">{contest.name}</h3>
+                    <p className="text-white/80 text-sm font-medium">{contest.fullName}</p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex gap-4 items-center">
+                    <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-lg">📅</div>
+                    <div>
+                      <p className="text-white/80 font-bold uppercase tracking-wider text-xs">Registration</p>
+                      <p className="font-bold text-sm">{contest.detailedData?.dates.registration || 'TBA'}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-center">
+                    <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-lg">🏁</div>
+                    <div>
+                      <p className="text-white/80 font-bold uppercase tracking-wider text-xs">Contest Day</p>
+                      <p className="font-bold text-sm">{contest.detailedData?.dates.contest || 'TBA'}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-center">
+                    <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-lg">🏆</div>
+                    <div>
+                      <p className="text-white/80 font-bold uppercase tracking-wider text-xs">Results</p>
+                      <p className="font-bold text-sm">{contest.detailedData?.dates.results || 'TBA'}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-white/20">
+                  <Link
+                    to={`/contest/${contest.id}`}
+                    className="inline-flex items-center gap-2 text-white font-bold hover:text-white/80 transition-colors"
+                  >
+                    View Details <span>→</span>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

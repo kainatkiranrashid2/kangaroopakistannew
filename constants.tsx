@@ -335,6 +335,84 @@ The contest serves as a bridge connecting Pakistani students with the global mat
         { name: 'Special Recognition Award 2021', url: 'https://drive.google.com/file/d/14h4brI4ADT-3EuSSFOjYtRiDVyCzxsNp/view?usp=sharing' },
         { name: 'Special Recognition Award 2022', url: 'https://drive.google.com/file/d/1zuuxWAQ9CuenPAQ7VHBQUCYchA394Z-O/view?usp=sharing' },
         { name: 'Special Recognition Award 2023', url: 'https://drive.google.com/file/d/1-wxeEwRM4h2zJ3eX7fPCLyyzYGQO_a_J/view?usp=sharing' }
+      ],
+      faqs: [
+        {
+          q: 'What is the date of International Kangaroo Mathematics Contest in Pakistan every year?',
+          a: 'International Kangaroo Mathematics Contest will be held in Pakistan on third Thursday of March, every year.'
+        },
+        {
+          q: 'What is the date of 33rd International Kangaroo Mathematics Contest in Pakistan for the year 2023?',
+          a: 'The date of 33rd International Kangaroo Mathematics Contest is March 16, 2023'
+        },
+        {
+          q: 'Can our institution get registered for the 33rd International Kangaroo Mathematics Contest after the deadline?',
+          a: 'Yes! Registration with late fee of Rs. 5,000 (per institution) till February 06, 2023 and by paying double late fee of Rs. 10,000 (per institution) till February 08, 2023.'
+        },
+        {
+          q: 'What happens if my institution sends registration application before the application deadline but it is received late at INNOVATIVE LEARNING due to postal delays?',
+          a: 'Registration can be denied in this case. Please, make sure that your application must reach INNOVATIVE LEARNING (KSF-Pakistan) office before the closing date.'
+        },
+        {
+          q: 'Can we send the registration fee in cash?',
+          a: 'The registration fee can only be sent through the institution to INNOVATIVE LEARNING (KSF-Pakistan) in the form of Bank Draft / Pay Order / Online Transfer'
+        },
+        {
+          q: 'Can we send the registration fee through Cross Cheque/Money Order/Postal Order etc?',
+          a: 'The registration fee cannot be accepted in any form other than Pay Order/Demand Draft/Online Transfer.'
+        },
+        {
+          q: 'What should be the title of the Pay Order / Bank Draft or to whom is it payable?',
+          a: 'Please get your Pay Order/Bank Draft prepared in favour of \'Innovative Learning\'.'
+        },
+        {
+          q: 'Our institution is not interested in hosting IKMC. Can we still participate in the contest?',
+          a: 'Participation in the contest is possible through the institution only. Individual participation is not possible in the IKMC.'
+        },
+        {
+          q: 'What is the participation fee for participating in the 33rd IKMC in Pakistan?',
+          a: 'The participation fee for 33rd IKMC 2023 in Pakistan is Rs. 1000 per student, which is collected by the participating institution and is forwarded to INNOVATIVE LEARNING.'
+        },
+        {
+          q: 'What is the minimum number of students required for an institution to participate?',
+          a: 'Each participating school must register a minimum of 10 students to be eligible. Unfortunately, entries below this number cannot be processed.'
+        },
+        {
+          q: 'Are calculators allowed during the contest?',
+          a: 'No, the use of calculator, mobile phone or any other electronic device is not permitted.'
+        },
+        {
+          q: 'What is the duration of the contest for different levels?',
+          a: 'The duration varies by level - 2 hours for Pre Ecolier and Ecolier levels (Class I-IV), and 3 hours for Benjamin, Cadet, Junior, and Student levels (Class V-XII).'
+        },
+        {
+          q: 'How is the scoring system structured?',
+          a: 'Contest problems for each level are divided into three parts. Each problem in first, second and third part is worth 3 points, 4 points and 5 points respectively. There is a penalty of one point for each incorrect answer. If the question is left unanswered, it is worth 0 points. To avoid negative scores, each student begins with a credit of 24 to 30 points.'
+        },
+        {
+          q: 'What language is used for the contest in Pakistan?',
+          a: 'The language of the contest in Pakistan is English.'
+        },
+        {
+          q: 'Are there international opportunities for winners?',
+          a: 'Yes, each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants, and availability varies from year to year. The Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp.'
+        },
+        {
+          q: 'Do all participants receive certificates?',
+          a: 'Yes, all participating students receive a certificate.'
+        },
+        {
+          q: 'Can students participate at a higher level than their current grade?',
+          a: 'Yes, students participate at their grade level or at a higher level (if they attend accelerated math programs at their schools).'
+        },
+        {
+          q: 'What type of problems can students expect?',
+          a: 'The contest contents are covered in the mathematics curriculum. Solution of the problems requires creativity, logical thinking or a different perspective. Here lies the challenge.'
+        },
+        {
+          q: 'How are the contest questions selected?',
+          a: 'The competition questions are selected by International Committee that is composed by KSF members and include representatives from all participating countries. The representatives meet at an annual conference each fall, every year in a different country.'
+        }
       ]
     }
   },
