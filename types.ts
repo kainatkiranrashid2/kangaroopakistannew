@@ -17,6 +17,9 @@ export interface DetailedContestInfo {
     poster: string;
   };
   history?: string;
+  detailedHistory?: string;
+  inPakistan?: string;
+  problemSelection?: string;
   intro?: string;
   overview?: string[];
   generalInfo: string[];

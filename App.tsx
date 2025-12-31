@@ -9,6 +9,7 @@ import ContestDetail from './pages/ContestDetail';
 import Participation from './pages/Participation';
 import Results from './pages/Results';
 import Contact from './pages/Contact';
+import Gallery from './pages/Gallery';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
             <Route path="/contest/:type/:tab" element={<ContestDetail />} />
             <Route path="/participation" element={<Participation />} />
             <Route path="/results" element={<Results />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

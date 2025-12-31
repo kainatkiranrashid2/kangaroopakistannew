@@ -19,6 +19,90 @@ const ContestDetail: React.FC = () => {
     }
 
     switch (tab) {
+      case 'history':
+        return (
+          <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <h2 className="text-3xl font-bold">Contest History</h2>
+            <div className="prose prose-lg max-w-none">
+              <div className="p-8 bg-gradient-to-br from-gray-50 to-white rounded-[40px] border border-gray-100 shadow-sm">
+                <div className="space-y-6">
+                  {data.history && (
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <span className="w-8 h-8 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600">🏛️</span>
+                        Origins & Development
+                      </h3>
+                      <div className="text-gray-700 leading-relaxed whitespace-pre-line bg-white p-6 rounded-2xl border border-gray-100">
+                        {data.history}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {data.detailedHistory && (
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <span className="w-8 h-8 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600">📚</span>
+                        Detailed Timeline
+                      </h3>
+                      <div className="text-gray-700 leading-relaxed whitespace-pre-line bg-white p-6 rounded-2xl border border-gray-100">
+                        {data.detailedHistory}
+                      </div>
+                    </div>
+                  )}
+
+                  {data.inPakistan && (
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <span className="w-8 h-8 bg-green-100 rounded-xl flex items-center justify-center text-green-600">🇵🇰</span>
+                        {contest.name} in Pakistan
+                      </h3>
+                      <div className="text-gray-700 leading-relaxed whitespace-pre-line bg-white p-6 rounded-2xl border border-gray-100">
+                        {data.inPakistan}
+                      </div>
+                    </div>
+                  )}
+
+                  {data.problemSelection && (
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <span className="w-8 h-8 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">🎯</span>
+                        Problem Selection Process
+                      </h3>
+                      <div className="text-gray-700 leading-relaxed whitespace-pre-line bg-white p-6 rounded-2xl border border-gray-100">
+                        {data.problemSelection}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      case 'faqs':
+        return (
+          <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              {(data.faqs || []).map((faq, fidx) => (
+                <div key={fidx} className="p-6 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                  <h4 className="font-bold text-gray-900 mb-3 flex items-start gap-3">
+                    <span className="text-indigo-600 font-black text-lg mt-0.5">Q{fidx + 1}.</span> 
+                    <span className="flex-1">{faq.q}</span>
+                  </h4>
+                  <div className="pl-8">
+                    <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                  </div>
+                </div>
+              ))}
+              {(!data.faqs || data.faqs.length === 0) && (
+                <div className="text-center py-12">
+                  <span className="text-6xl block mb-4">❓</span>
+                  <p className="text-gray-400 italic">FAQs will be updated soon.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        );
       case 'forms':
         return (
           <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -222,10 +306,12 @@ const ContestDetail: React.FC = () => {
               <h3 className="px-6 text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Contest Hub</h3>
               {[
                 { name: 'General Information', id: undefined, icon: '💡' },
+                { name: 'History', id: 'history', icon: '📜' },
                 { name: 'Forms', id: 'forms', icon: '📝' },
                 { name: 'Past Papers', id: 'past-papers', icon: '📚' },
                 { name: 'Results', id: 'results', icon: '🏆' },
-                { name: 'Answer Sheets', id: 'answer-sheets', icon: '✅' }
+                { name: 'Answer Sheets', id: 'answer-sheets', icon: '✅' },
+                { name: 'FAQs', id: 'faqs', icon: '❓' }
               ].map((item) => (
                 <Link
                   key={item.name}

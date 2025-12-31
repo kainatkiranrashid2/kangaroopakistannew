@@ -158,7 +158,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/about" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">About Us</Link>
-                <Link to="/results" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">View Results</Link>
+                <Link to="/participation" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">Register Now</Link>
                 <Link to="/contact" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">Get in Touch</Link>
               </div>
             </div>

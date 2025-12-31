@@ -48,12 +48,7 @@ const Participation: React.FC = () => {
                </h4>
                <p className="text-gray-600 pl-8 leading-relaxed">Currently, we prefer registrations through schools to ensure standardized supervision during the contest. Contact your school coordinator for details.</p>
              </div>
-             <div className="group">
-               <h4 className="text-xl font-bold mb-3 flex items-center gap-2">
-                 <span className="text-indigo-600">Q:</span> What is the registration fee?
-               </h4>
-               <p className="text-gray-600 pl-8 leading-relaxed">Registration fees vary by contest and are typically used to cover international processing, local logistics, and awards. Please check with your school for current rates.</p>
-             </div>
+             
            </div>
         </section>
       </div>

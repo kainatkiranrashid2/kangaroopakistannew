@@ -32,6 +32,21 @@ export const CONTESTS: Record<ContestType, ContestData> = {
       },
       intro: 'The primary aim of the contest is to foster mathematical thinking and cultivate an interest in mathematics, providing students with a platform to expand their minds and compare their abilities with peers worldwide. In 2023, the contest attracted participation of over 6 million students across 120 countries.',
       history: 'In the early 80\'s, Peter O\'Holloran invented a new kind of game in Australian schools. In 1991, French teachers André Deledicq and Jean Pierre Boudine started the competition in France under the name "Kangaroo" to pay tribute to their Australian friends. In 1995, the International Association "Kangourou Sans Frontières" was created.',
+      detailedHistory: `In the early 80's, Peter O'Holloran, a mathematics teacher at Sydney, invented a new kind of game in Australian schools, a multiple choice questionnaire, corrected by computer, which meant that thousands of students could participate at the same time. It was a tremendous success for the Australian Mathematical National Contest.
+
+In 1991, two French teachers (André Deledicq and Jean Pierre Boudine) decided to start the same competition in France under the name "Kangaroo" to pay tribute to their Australian friends. In the first edition 120000 juniors took part. Ever since the competition has been opened to junior as well as to senior students, followed by the large number of European countries forming altogether "Kangourou Sans Frontières".
+
+In June 1993, the Board of the French Kangourou convened a meeting of organizers of mathematical competitions in European countries. The meeting took place in Paris. The European delegates were impressed by the steadily increasing number of participants in the French Kangourou competition, 120000 in 1991, 300000 in 1992 and 500000 in 1993 and so on….
+
+In June 1994, in Strasbourg, at the European Council, The General Assembly of the delegates of 10 European countries decided to create the International Association "Kangourou Sans Frontières" with an elected Board of 6 members and with legal statuses registered in Paris, on January 17th 1995.
+
+In 1994, Kangaroo Contest has been given the D'Alembert Prize by the French Mathematical Society for the best work of mathematics generalization and diffusion. Besides, the Kangaroo has been distinguished for its important contribution to mathematics pedagogy, during the International Symposium for Mathematics teaching, held in Copenhagen in July 2004.`,
+      inPakistan: `The foundation of the International Kangaroo Mathematics Contest occurred in France in 1991, rapidly gaining popularity among students globally. Subsequently, the International Association "Kangourou Sans Frontières" was established, now overseeing the coordination of the worldwide event known as the "International Kangaroo Mathematics Contest" (IKMC). 
+
+The primary aim of the contest is to foster mathematical thinking and cultivate an interest in mathematics, providing students with a platform to expand their minds and compare their abilities with peers worldwide. In 2023, the contest attracted participation of over 6 million students across 120 countries. In Pakistan, Innovative Learning is responsible for organizing the competition.
+
+The contest serves as a bridge connecting Pakistani students with the global mathematical community, allowing them to showcase their talents on an international stage. Through IKMC, Pakistani students gain exposure to problem-solving techniques and mathematical reasoning that extends beyond traditional curriculum boundaries.`,
+      problemSelection: `Representatives of more than 84 countries meet in autumn (October – November) each year for a 4-5 days workshop to select the problems for the International Kangaroo Mathematics Contest (IKMC). Several months before this annual meeting each country proposes a good number of original problems for each level of the contest. The representatives of each country have an access to the collections of all proposed problems. Before going to the annual meeting in autumn, all the members study these problems carefully, they make comments and suggest corrections wherever needed. In the workshop best and the most original problems are chosen. During the workshop the experts make sure that each problem is an original problem and did not appear in any book or any contest before. Participating countries all over the world use these selected problems for the IKMC on the third Thursday of March every year.`,
       overview: [
         "The contest is composed of just one test, no selection, no preliminary, no final test.",
         "The contest takes place in the month of March every year on the same day in all the participating countries",
@@ -330,7 +345,7 @@ export const CONTESTS: Record<ContestType, ContestData> = {
     description: 'Igniting curiosity and scientific inquiry through engaging challenges for young innovators.',
     color: 'orange-500',
     icon: '🔬',
-    logoUrl: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=200&h=200&auto=format&fit=crop',
+    logoUrl: 'https://kangaroopakistan-prod.s3.us-east-1.amazonaws.com/IKSC%20Logo3_1715338214377.png',
     bgGradient: 'from-[#f1863d] to-orange-600',
     detailedData: {
       dates: {
@@ -343,6 +358,18 @@ export const CONTESTS: Record<ContestType, ContestData> = {
         results: 'https://enrollments.kangaroopakistan.org/',
         poster: '#'
       },
+      detailedHistory: `The International Kangaroo Science Contest (IKSC) emerged as part of the broader Kangaroo educational movement that began with mathematics in France in 1991. Following the success of the International Kangaroo Mathematics Contest, educators recognized the need to extend this innovative approach to other subjects, particularly science.
+
+The science contest was developed to address the growing importance of scientific literacy in the modern world and to provide students with an engaging way to explore scientific concepts. Like its mathematics counterpart, IKSC was designed to be accessible to students of all levels while challenging them to think beyond traditional textbook approaches.
+
+The contest format was carefully developed to ensure that it would be both educational and engaging, using multiple-choice questions that test understanding rather than mere recall. The problems are designed to encourage students to apply scientific principles to real-world situations and to think critically about scientific phenomena.
+
+The development of IKSC reflects the global recognition that science education needs to be more engaging and thought-provoking. By providing students with challenging yet accessible problems, the contest helps to develop the kind of scientific thinking that is essential for success in the 21st century.`,
+      inPakistan: `The International Kangaroo Science Contest (IKSC) is organized by Inventive Learning in Pakistan as part of the global Kangaroo educational initiative. This contest is designed to promote scientific thinking and foster a deeper understanding of science concepts among Pakistani students from grades 1 through 12.
+
+IKSC serves as a platform for students to explore scientific concepts beyond the traditional classroom curriculum, encouraging them to think critically and apply scientific reasoning to solve problems. The contest aims to identify and nurture scientific talent among Pakistani youth, providing them with opportunities to compete on an international level.
+
+Through IKSC, Pakistani students gain exposure to international standards of science education and have the opportunity to compare their abilities with peers from around the world. The contest serves as a stepping stone for students interested in pursuing careers in science, technology, engineering, and related fields.`,
       overview: [
         "The contest is composed of just one test, no selection, no preliminary, no final test.",
         "The contest consists of Multiple Choice Questionnaire of twenty four to thirty questions, depending upon the level (grade) of the student. For each question a choice of five answers is provided.",
@@ -628,7 +655,7 @@ export const CONTESTS: Record<ContestType, ContestData> = {
     description: 'Celebrating language diversity and communication skills in an international context.',
     color: 'green-500',
     icon: '📚',
-    logoUrl: 'https://kangaroopakistan-prod.s3.us-east-1.amazonaws.com/IKSC%20Logo3_1715338214377.png',
+    logoUrl: 'https://kangaroopakistan-prod.s3.us-east-1.amazonaws.com/iklc_1717585139021.webp',
     bgGradient: 'from-[#11d869] to-emerald-600',
     detailedData: {
       dates: {
@@ -641,6 +668,18 @@ export const CONTESTS: Record<ContestType, ContestData> = {
         results: 'https://enrollments.kangaroopakistan.org/',
         poster: '#'
       },
+      detailedHistory: `The International Kangaroo Linguistic Contest developed as a natural extension of the successful Kangaroo educational model that began with mathematics in France in 1991. Recognizing the critical importance of language skills in global education, educators sought to apply the innovative Kangaroo approach to linguistic education.
+
+The linguistic contest was conceived to address the growing need for effective communication skills in an increasingly interconnected world. As English became the lingua franca of international business, science, and technology, the importance of developing strong English language skills became paramount for students worldwide.
+
+The contest format was carefully designed to be both challenging and accessible, using multiple-choice questions that test deep understanding of language rather than superficial knowledge. The problems are crafted to encourage students to think about language in context, understand nuances of meaning, and apply linguistic principles to solve communication challenges.
+
+The contest has evolved to incorporate various aspects of language learning, including reading comprehension, vocabulary in context, grammar application, and understanding of linguistic patterns. This comprehensive approach ensures that students develop well-rounded language skills rather than focusing on isolated grammatical rules or vocabulary lists.`,
+      inPakistan: `The International Kangaroo Linguistic Contest (IKLC) is organized by Inventive Learning in Pakistan as part of the comprehensive Kangaroo educational initiative. This contest specifically focuses on enhancing English communication skills and linguistic competency among Pakistani students from grades 1 through 12.
+
+IKLC recognizes the pivotal role of English communication skills in modern education and global connectivity. The contest is designed to foster a deeper appreciation for language arts while developing critical thinking skills through linguistic challenges. It provides Pakistani students with an opportunity to demonstrate their English language proficiency on an international platform.
+
+Through IKLC, Pakistani students gain exposure to international standards of English language education and have the opportunity to compare their linguistic abilities with peers from around the world. The contest serves as a valuable tool for identifying and nurturing linguistic talent, particularly important in Pakistan where English proficiency opens doors to higher education and career opportunities.`,
       overview: [
         "The Contest is composed of just one test, no selection, no preliminary, no final test.",
         "The Contest consists of Multiple Choice Questionnaire of twenty four to thirty questions, depending upon the level (grade) of the student. For each question a choice of five answers is provided.",
@@ -926,6 +965,70 @@ export const CONTESTS: Record<ContestType, ContestData> = {
         {
           q: 'What is the participation fee for participating in the IKLC in Pakistan?',
           a: 'The participation fee for IKLC 2023 in Pakistan is Rs. 1000 per student, which is collected by the participating institution and is forwarded to Innovative Learning.'
+        },
+        {
+          q: 'What is the date of International Kangaroo Mathematics Contest in Pakistan every year?',
+          a: 'International Kangaroo Mathematics Contest will be held in Pakistan on third Thursday of March, every year.'
+        },
+        {
+          q: 'Can our institution get registered for the International Kangaroo Mathematics Contest after the deadline?',
+          a: 'Yes! Registration with late fee of Rs. 5,000 (per institution) till February 06, 2023 and by paying double late fee of Rs. 10,000 (per institution) till February 08, 2023.'
+        },
+        {
+          q: 'What happens if my institution sends registration application before the application deadline but it is received late at INNOVATIVE LEARNING due to postal delays?',
+          a: 'Registration can be denied in this case. Please, make sure that your application must reach INNOVATIVE LEARNING (KSF-Pakistan) office before the closing date.'
+        },
+        {
+          q: 'Can we send the registration fee in cash?',
+          a: 'The registration fee can only be sent through the institution to INNOVATIVE LEARNING (KSF-Pakistan) in the form of Bank Draft / Pay Order / Online Transfer'
+        },
+        {
+          q: 'What should be the title of the Pay Order / Bank Draft or to whom is it payable?',
+          a: 'Please get your Pay Order/Bank Draft prepared in favour of \'Innovative Learning\'.'
+        },
+        {
+          q: 'Our institution is not interested in hosting IKMC. Can we still participate in the contest?',
+          a: 'Participation in the contest is possible through the institution only. Individual participation is not possible in the IKMC.'
+        },
+        {
+          q: 'What is the minimum number of students required for an institution to participate?',
+          a: 'Each participating school must register a minimum of 10 students to be eligible. Unfortunately, entries below this number cannot be processed.'
+        },
+        {
+          q: 'Are calculators allowed during the contest?',
+          a: 'No, the use of calculator, mobile phone or any other electronic device is not permitted.'
+        },
+        {
+          q: 'What is the duration of the contest for different levels?',
+          a: 'The duration varies by level - 2 hours for Pre Ecolier and Ecolier levels (Class I-IV), and 3 hours for Benjamin, Cadet, Junior, and Student levels (Class V-XII).'
+        },
+        {
+          q: 'How is the scoring system structured?',
+          a: 'Contest problems for each level are divided into three parts. Each problem in first, second and third part is worth 3 points, 4 points and 5 points respectively. There is a penalty of one point for each incorrect answer. If the question is left unanswered, it is worth 0 points. To avoid negative scores, each student begins with a credit of 24 to 30 points.'
+        },
+        {
+          q: 'What language is used for the contest in Pakistan?',
+          a: 'The language of the contest in Pakistan is English.'
+        },
+        {
+          q: 'Are there international opportunities for winners?',
+          a: 'Yes, each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants, and availability varies from year to year. The Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp.'
+        },
+        {
+          q: 'Do all participants receive certificates?',
+          a: 'Yes, all participating students receive a certificate.'
+        },
+        {
+          q: 'Can students participate at a higher level than their current grade?',
+          a: 'Yes, students participate at their grade level or at a higher level (if they attend accelerated math programs at their schools).'
+        },
+        {
+          q: 'What type of problems can students expect?',
+          a: 'The contest contents are covered in the mathematics curriculum. Solution of the problems requires creativity, logical thinking or a different perspective. Here lies the challenge.'
+        },
+        {
+          q: 'How are the contest questions selected?',
+          a: 'The competition questions are selected by International Committee that is composed by KSF members and include representatives from all participating countries. The representatives meet at an annual conference each fall, every year in a different country.'
         }
       ]
     }

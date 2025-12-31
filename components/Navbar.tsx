@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
+    { name: 'Gallery', path: '/gallery' },
   ];
 
   const contests = [ContestType.IKMC, ContestType.IKSC, ContestType.IKLC];
