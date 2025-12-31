@@ -255,7 +255,7 @@ const ContestDetail: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      <section className={`py-32 bg-gradient-to-br ${contest.bgGradient} text-white relative overflow-hidden`}>
+      <section className={`py-16 bg-gradient-to-br ${contest.bgGradient} text-white relative overflow-hidden`}>
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row gap-12 items-center">

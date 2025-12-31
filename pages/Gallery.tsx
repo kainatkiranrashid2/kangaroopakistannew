@@ -89,32 +89,32 @@ const Gallery: React.FC = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300"
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedImage(null)}
         >
           <div 
-            className="relative max-w-5xl w-full h-full flex flex-col items-center justify-center gap-8"
+            className="relative max-w-4xl w-full max-h-[90vh] flex flex-col"
             onClick={e => e.stopPropagation()}
           >
             <button 
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 md:-right-12 text-white text-4xl hover:scale-110 transition-transform"
+              className="absolute -top-12 right-0 text-white text-3xl hover:scale-110 transition-transform z-10"
             >
               ×
             </button>
-            <div className="w-full h-full flex flex-col rounded-[50px] overflow-hidden bg-white shadow-2xl">
-              <div className="flex-1 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-video bg-gray-100 flex items-center justify-center">
                 <img 
                   src={selectedImage.url} 
                   alt={selectedImage.title} 
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="p-8 md:p-12 text-center bg-white border-t">
-                <span className="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold mb-4">
+              <div className="p-6 text-center">
+                <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold mb-2">
                   {selectedImage.category}
                 </span>
-                <h2 className="text-3xl font-black text-gray-900">{selectedImage.title}</h2>
+                <h2 className="text-xl font-bold text-gray-900">{selectedImage.title}</h2>
               </div>
             </div>
           </div>

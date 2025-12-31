@@ -208,20 +208,28 @@ const About: React.FC = () => {
             </div>
             
             <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  onClick={() => setActiveCert(`cert-${i}`)}
-                  className="cursor-pointer group relative rounded-[45px] overflow-hidden shadow-2xl bg-white p-4 hover:scale-[1.02] transition-all"
-                >
-                  <div className="aspect-[3/4] rounded-[35px] overflow-hidden relative">
-                    <img src={`https://picsum.photos/seed/membership-${i}/800/1100`} alt={`Membership Certificate ${i}`} className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-indigo-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                      <span className="text-white font-bold text-sm px-6 py-2 border-2 border-white rounded-full">Expand Certificate</span>
-                    </div>
+              <div
+                onClick={() => setActiveCert('membership1')}
+                className="cursor-pointer group relative rounded-[45px] overflow-hidden shadow-2xl bg-white p-4 hover:scale-[1.02] transition-all"
+              >
+                <div className="aspect-[3/4] rounded-[35px] overflow-hidden relative">
+                  <img src="/membership.png" alt="KSF Membership Certificate" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-indigo-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <span className="text-white font-bold text-sm px-6 py-2 border-2 border-white rounded-full">Expand Certificate</span>
                   </div>
                 </div>
-              ))}
+              </div>
+              <div
+                onClick={() => setActiveCert('membership2')}
+                className="cursor-pointer group relative rounded-[45px] overflow-hidden shadow-2xl bg-white p-4 hover:scale-[1.02] transition-all"
+              >
+                <div className="aspect-[3/4] rounded-[35px] overflow-hidden relative">
+                  <img src="/membership2.png" alt="International Linguistic Association Certificate" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-indigo-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                    <span className="text-white font-bold text-sm px-6 py-2 border-2 border-white rounded-full">Expand Certificate</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -241,14 +249,27 @@ const About: React.FC = () => {
               ×
             </button>
             <div className="flex-1 overflow-y-auto p-10 bg-gray-100 flex items-center justify-center">
-              <img src={`https://picsum.photos/seed/${activeCert}/1200/1600`} alt="Certificate Large" className="max-w-full max-h-full object-contain shadow-lg" />
+              <img 
+                src={activeCert === 'membership1' ? '/membership.png' : '/membership2.png'} 
+                alt={activeCert === 'membership1' ? 'KSF Membership Certificate' : 'International Linguistic Association Certificate'} 
+                className="max-w-full max-h-full object-contain shadow-lg" 
+              />
             </div>
             <div className="p-10 border-t bg-white flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="text-center md:text-left">
-                <h4 className="font-black text-2xl text-gray-900">Official KSF Membership</h4>
+                <h4 className="font-black text-2xl text-gray-900">
+                  {activeCert === 'membership1' ? 'Official KSF Membership' : 'International Linguistic Association'}
+                </h4>
                 <p className="text-gray-500 font-bold uppercase text-xs tracking-widest mt-1">Verified Credential for Kangaroo Pakistan</p>
               </div>
-              <a href="#" className="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-black text-sm hover:bg-indigo-700 shadow-xl shadow-indigo-200 transition-all">Download PDF Version</a>
+              <a 
+                href={activeCert === 'membership1' ? 'https://drive.google.com/file/d/1UdOgo-LJSE8--nF979tTWa24zedhcTiL/view' : 'https://drive.google.com/file/d/1eX6CA-9TBotAv80bhJmpEXgt_TqkzatW/view'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-black text-sm hover:bg-indigo-700 shadow-xl shadow-indigo-200 transition-all"
+              >
+                View Full Resolution
+              </a>
             </div>
           </div>
         </div>

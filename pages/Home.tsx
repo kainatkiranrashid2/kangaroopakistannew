@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-32 lg:pt-32 lg:pb-48 bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+      <section className="relative pt-8 pb-32 lg:pt-12 lg:pb-32 bg-gradient-to-br from-indigo-50 via-white to-blue-50">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-4xl mx-auto">
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-white text-indigo-700 rounded-full font-bold text-xs mb-6 shadow-sm border border-indigo-100 hover:bg-indigo-50 transition-all animate-pulse"
             >
               <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-              LATEST ANNOUNCEMENTS
+             CLICK TO VIEW LATEST ANNOUNCEMENTS
             </button>
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               World's Most <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Prestigious</span> Educational Contests
@@ -69,12 +69,14 @@ const Home: React.FC = () => {
               Empowering school children across Pakistan to explore their natural talents and compete on the global stage in Math, Science, and Linguistics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/participation"
+              <a
+                href="https://enrollments.kangaroopakistan.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-10 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg hover:bg-indigo-700 shadow-xl hover:shadow-indigo-200 transition-all hover:-translate-y-1"
               >
                 Register Now
-              </Link>
+              </a>
               <Link
                 to="/about"
                 className="px-10 py-4 bg-white text-gray-700 border-2 border-gray-100 rounded-2xl font-bold text-lg hover:bg-gray-50 transition-all"
@@ -158,7 +160,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/about" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">About Us</Link>
-                <Link to="/participation" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">Register Now</Link>
+                <a href="https://enrollments.kangaroopakistan.org/" target="_blank" rel="noopener noreferrer" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">Register Now</a>
                 <Link to="/contact" className="bg-gray-100 text-gray-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all">Get in Touch</Link>
               </div>
             </div>

@@ -125,12 +125,14 @@ const Navbar: React.FC = () => {
             </Link>
 
             <div className="pl-4">
-              <Link
-                to="/participation"
+              <a
+                href="https://enrollments.kangaroopakistan.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-indigo-600 text-white px-6 py-2.5 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-md hover:shadow-indigo-200 hover:-translate-y-0.5"
               >
                 Register Now
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -200,12 +202,14 @@ const Navbar: React.FC = () => {
           </Link>
 
           <div className="pt-4">
-            <Link
-              to="/participation"
+            <a
+              href="https://enrollments.kangaroopakistan.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full text-center bg-indigo-600 text-white px-6 py-4 rounded-2xl font-bold shadow-lg"
             >
               Register Now
-            </Link>
+            </a>
           </div>
         </div>
       )}
