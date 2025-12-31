@@ -17,7 +17,7 @@ export const CONTESTS: Record<ContestType, ContestData> = {
     description: 'The world\'s most prestigious mathematics competition fostering critical thinking and logical reasoning.',
     color: 'blue-500',
     icon: '📐',
-    logoUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=200&h=200&auto=format&fit=crop',
+    logoUrl: 'https://kangaroopakistan-prod.s3.amazonaws.com/IKMC_1706604401253.png',
     bgGradient: 'from-blue-500 to-indigo-600',
     detailedData: {
       dates: {
