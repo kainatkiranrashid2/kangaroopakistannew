@@ -9,6 +9,25 @@ const ContestDetail: React.FC = () => {
   const contest = CONTESTS[type as ContestType] || CONTESTS[ContestType.IKMC];
   const data = contest.detailedData;
 
+  // Shared function to convert Google Drive/Docs URLs to direct download URLs
+  const convertToDownloadUrl = (url: string) => {
+    // Handle Google Drive file URLs
+    if (url.includes('drive.google.com/file/d/')) {
+      const fileId = url.match(/\/file\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+      if (fileId) {
+        return `https://drive.google.com/uc?export=download&id=${fileId}`;
+      }
+    }
+    // Handle Google Docs URLs
+    if (url.includes('docs.google.com/document/d/')) {
+      const docId = url.match(/\/document\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+      if (docId) {
+        return `https://docs.google.com/document/d/${docId}/export?format=docx`;
+      }
+    }
+    return url;
+  };
+
   const renderTabContent = () => {
     if (!data) {
       return (
@@ -114,8 +133,20 @@ const ContestDetail: React.FC = () => {
                   <h4 className="font-bold text-xl mb-2">{form.title}</h4>
                   <p className="text-gray-500 mb-6 text-sm leading-relaxed">{form.description}</p>
                   <div className="flex gap-3">
-                    <a href={form.word} target="_blank" rel="noopener noreferrer" download className="flex-1 text-center bg-indigo-600 text-white py-2.5 rounded-xl font-bold text-xs hover:bg-indigo-700 transition-colors">MS WORD</a>
-                    <a href={form.pdf} target="_blank" rel="noopener noreferrer" download className="flex-1 text-center bg-gray-900 text-white py-2.5 rounded-xl font-bold text-xs hover:bg-gray-800 transition-colors">PDF</a>
+                    <a 
+                      href={convertToDownloadUrl(form.word)} 
+                      download={`${form.title.replace(/\s+/g, '_')}.docx`}
+                      className="flex-1 text-center bg-indigo-600 text-white py-2.5 rounded-xl font-bold text-xs hover:bg-indigo-700 transition-colors"
+                    >
+                      MS WORD
+                    </a>
+                    <a 
+                      href={convertToDownloadUrl(form.pdf)} 
+                      download={`${form.title.replace(/\s+/g, '_')}.pdf`}
+                      className="flex-1 text-center bg-gray-900 text-white py-2.5 rounded-xl font-bold text-xs hover:bg-gray-800 transition-colors"
+                    >
+                      PDF
+                    </a>
                   </div>
                 </div>
               ))}
@@ -133,11 +164,22 @@ const ContestDetail: React.FC = () => {
                  <div key={year} className="p-8 bg-gray-50 rounded-[40px] border border-gray-100">
                     <div className="flex justify-between items-center mb-6">
                        <h3 className="text-2xl font-black text-gray-900">{year} Session</h3>
-                       <a href={info.answerKey} target="_blank" rel="noopener noreferrer" download className="text-sm font-bold text-indigo-600 underline hover:text-indigo-800 transition-colors">Answer Key</a>
+                       <a 
+                         href={convertToDownloadUrl(info.answerKey)} 
+                         download={`${contest.name}_${year}_Answer_Key.pdf`}
+                         className="text-sm font-bold text-indigo-600 underline hover:text-indigo-800 transition-colors"
+                       >
+                         Answer Key
+                       </a>
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                       {(info.links || []).map((link, idx) => (
-                        <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" download className="bg-white p-4 rounded-2xl border border-gray-100 text-center font-bold text-gray-700 hover:border-indigo-600 hover:text-indigo-600 transition-all shadow-sm">
+                        <a 
+                          key={idx} 
+                          href={convertToDownloadUrl(link.url)} 
+                          download={`${contest.name}_${year}_${link.label.replace(/\s+/g, '_')}.pdf`}
+                          className="bg-white p-4 rounded-2xl border border-gray-100 text-center font-bold text-gray-700 hover:border-indigo-600 hover:text-indigo-600 transition-all shadow-sm"
+                        >
                           {link.label}
                         </a>
                       ))}
@@ -162,10 +204,8 @@ const ContestDetail: React.FC = () => {
                        {(awards || []).map((award, aidx) => (
                          <a 
                           key={aidx} 
-                          href={award.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          download 
+                          href={convertToDownloadUrl(award.url)} 
+                          download={`${contest.name}_${year}_${award.label.replace(/\s+/g, '_')}.pdf`}
                           className="flex items-center gap-4 p-5 bg-gray-50 border border-gray-100 rounded-2xl font-bold text-gray-700 hover:bg-white hover:border-indigo-200 hover:shadow-lg transition-all"
                          >
                             <span className="text-2xl">{award.icon || '📜'}</span> 
@@ -189,10 +229,8 @@ const ContestDetail: React.FC = () => {
                     <h4 className="text-2xl font-bold mb-2">{sheet.label}</h4>
                     <p className="opacity-70 mb-8 text-sm leading-relaxed">Download and print for practice or use during the competition.</p>
                     <a 
-                      href={sheet.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      download 
+                      href={convertToDownloadUrl(sheet.url)} 
+                      download={`${contest.name}_${sheet.label.replace(/\s+/g, '_')}.pdf`}
                       className={`inline-block ${idx % 2 === 0 ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-emerald-600 hover:bg-emerald-700'} text-white px-10 py-3 rounded-2xl font-bold shadow-xl transition-all`}
                     >
                       DOWNLOAD
@@ -277,7 +315,7 @@ const ContestDetail: React.FC = () => {
                       </div>
                     </div>
                     <div className="flex gap-4 items-center">
-                      <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">🏁</div>
+                      <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">🏆</div>
                       <div>
                         <p className="text-indigo-100 font-bold uppercase tracking-wider text-[14px]">Result Date:</p>
                         <p className="font-bold text-[14px]">{data?.dates.results}</p>
