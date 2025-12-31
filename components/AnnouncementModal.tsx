@@ -54,14 +54,14 @@ const AnnouncementModal: React.FC<AnnouncementModalProps> = ({ onClose }) => {
               📅
             </div>
             <div className="min-w-0">
-              <h4 className="font-bold text-orange-900 text-sm">Deadline - February 6, 2026</h4>
+              <h4 className="font-bold text-orange-900 text-sm">IKMC Registration Deadline - February 6, 2026</h4>
               <span className="text-xs text-orange-600 underline">CLICK HERE →</span>
             </div>
           </a>
 
           {/* Item 3 */}
           <a 
-            href="https://kangaroopakistan.org/iksc#results" 
+            href="#/contest/IKSC/results" 
             target="_blank" 
             rel="noopener noreferrer"
             onClick={onClose} 

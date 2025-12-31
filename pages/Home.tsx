@@ -30,12 +30,12 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 overflow-hidden whitespace-nowrap">
           <div className="animate-marquee inline-block">
             <span className="mx-8 font-medium text-sm">🔥 <b>IKMC 2026:</b> Registrations Now Open</span>
-            <span className="mx-8 font-medium text-sm">📅 <b>IKMC registration Deadline:</b> Feb 6, 2026</span>
+            <span className="mx-8 font-medium text-sm">📅 <b>IKMC registrations Deadline:</b> Feb 6, 2026</span>
             <span className="mx-8 font-medium text-sm">🏆 <b>Results:</b> IKSC 2025 Results are Out!</span>
             <span className="mx-8 font-medium text-sm">⚖️ <b>Legal:</b> IP Tribunal Lahore Official Notice</span>
             {/* Duplicate for seamless marquee */}
             <span className="mx-8 font-medium text-sm">🔥 <b>IKMC 2026:</b> Registrations Now Open</span>
-            <span className="mx-8 font-medium text-sm">📅 <b>Deadline:</b> Feb 6, 2026</span>
+            <span className="mx-8 font-medium text-sm">📅 <b>IKMC Registration Deadline:</b> Feb 6, 2026</span>
           </div>
         </div>
         <style>{`
