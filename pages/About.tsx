@@ -59,7 +59,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-white min-h-screen overflow-hidden">
       {/* 1. Hero Section: The Big Picture */}
-      <section className="relative pt-24 pb-32 lg:pt-40 lg:pb-48 bg-gray-900 overflow-hidden">
+      <section className="relative pt-16 pb-16 lg:pt-20 lg:pb-20 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-indigo-500/20 to-transparent"></div>
 
