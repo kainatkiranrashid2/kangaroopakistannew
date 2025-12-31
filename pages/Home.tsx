@@ -153,7 +153,7 @@ const Home: React.FC = () => {
         <div className="absolute top-1/2 left-1/4 w-12 h-12 border-2 border-white/10 rounded-full animate-spin-slow" style={{animationDelay: '2s'}}></div>
         
         <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-10 relative">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-left text-white">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-10 lg:gap-10 text-left text-white">
             {stats.map((stat, idx) => (
               <div key={idx} className="space-y-2 animate-fade-in-up group" style={{animationDelay: `${idx * 0.2}s`}}>
                 <div className="text-left text-3xl md:text-4xl lg:text-5xl font-black group-hover:scale-110 transition-transform duration-300 animate-count-up">{stat.value}</div>
