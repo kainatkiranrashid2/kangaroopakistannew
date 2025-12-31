@@ -58,17 +58,17 @@ The contest serves as a bridge connecting Pakistani students with the global mat
         "Contest problems for each level are divided into three parts. Each problem in first, second and third part is worth 3 points, 4 points and 5 points respectively.",
         "There is a penalty of one point for each incorrect answer. If the question is left unanswered, it is worth 0 points. To avoid negative scores, each student begins with a credit of 24 to 30 points. Hence, the minimum score attainable is 0 points.",
         "Each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants, and availability varies from year to year.",
-        "The Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp."
+        "Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp."
       ],
       generalInfo: [
         "All students from class 1 - 12 are invited to participate in IKMC.",
         "The IKMC will be held in all participating institutions all over the country at the same time.",
         "Each participating school must register a minimum of 10 students to be eligible. Unfortunately, entries below this number cannnot be processed.",
         "Schools should not refuse any student to participate in the contest who is willing to pay the fee.",
-        "Registration includes a fee of Rs.1000 per student which covers the costs of organizing the contest. There is no registration fee for institution.",
+        "Registration includes a fee of Rs.1100 per student which covers the costs of organizing the contest. There is no registration fee for institution.",
         "All schools and colleges in Pakistan are welcome to host IKMC by registering their students in the contest.",
-        "Contest will be held in your own institution under the supervision of Principal.",
-        "The competition questions are selected by International Committee that is composed by KSF members and include representatives from all participating countries. The representatives meet at an annual conference each fall, every year in a different country.",
+        "Contest will be held in your own institution under the supervision of the Principal.",
+        "The competition questions are selected by the International Committee that is composed by KSF members and include representatives from all participating countries. The representatives meet at an annual conference every year in fall in a different country.",
         "Students participate at their grade level or at a higher level (if they attend accelerated math programs at their schools).",
         "The competition has a form of a multiple choice test. You may see past Kangaroo questions in the download section of this site.",
         "At each level of participation the first prize is awarded at the country level to the students who earn the largest sum of points at their level. Likewise the first prize at district and school levels are also awarded. In addition several other prizes are awarded at each level of participation.",
@@ -688,7 +688,7 @@ Through IKLC, Pakistani students gain exposure to international standards of Eng
         "The Contest questions for each level are divided into three parts. Each question in first, second and third part is worth 3 points, 4 points and 5 points respectively.",
         "There is a penalty of one point for each incorrect answer. If the question is left unanswered, it is worth 0 points. To avoid negative scores, each student begins with a credit of 24 to 30 points. Hence, the minimum score attainable is 0 points.",
         "Each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants and availability vary from year to year.",
-        "The Innovative learning determines and coordinates the participation of the Pakistani students in the International Summer Camp."
+        "Innovative learning determines and coordinates the participation of the Pakistani students in the International Summer Camp."
       ],
       generalInfo: [
         "All students from class 1 - 13 are invited to participate in IKLC.",
@@ -1012,7 +1012,7 @@ Through IKLC, Pakistani students gain exposure to international standards of Eng
         },
         {
           q: 'Are there international opportunities for winners?',
-          a: 'Yes, each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants, and availability varies from year to year. The Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp.'
+          a: 'Yes, each year, several International Summer Camps are organized for national winners of the contest. The locations, dates, duration, age of participants, and availability varies from year to year. Innovative Learning (Kangourou Sans Frontières – Pakistan) determines and coordinates the participation of the Pakistani students in the International Summer Camp.'
         },
         {
           q: 'Do all participants receive certificates?',
@@ -1038,9 +1038,7 @@ Through IKLC, Pakistani students gain exposure to international standards of Eng
 export const TEAM: TeamMember[] = [
   { name: 'Valiantsina Mamayeva', role: 'Chief Executive Officer (CEO)', image: 'https://picsum.photos/seed/ceo/400/400' },
   { name: 'Khalid Awan', role: 'Chief Operating Officer (COO)', image: 'https://picsum.photos/seed/coo/400/400' },
-  { name: 'Iram Sohail', role: 'General Manager', image: 'https://picsum.photos/seed/gm/400/400' },
-  { name: 'Wajiha Farhat', role: 'Manager', image: 'https://picsum.photos/seed/m1/400/400' },
-  { name: 'Ebdullah Khan', role: 'Head of Operations', image: 'https://picsum.photos/seed/ops/400/400' },
+  
 ];
 
 export const MOCK_RESULTS: ResultEntry[] = [

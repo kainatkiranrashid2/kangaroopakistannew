@@ -212,7 +212,7 @@ const ContestDetail: React.FC = () => {
                  <div className="grid grid-cols-1 gap-4">
                    {(data.generalInfo || []).map((info, idx) => (
                      <div key={idx} className="flex gap-4 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                        <span className="text-indigo-600 font-bold">0{idx+1}</span>
+                        <span className="text-indigo-600 font-bold">{idx <= 8 ? `0${idx+1}` : idx+1}</span>
                         <p className="text-sm text-gray-700 font-medium">{info}</p>
                      </div>
                    ))}

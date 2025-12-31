@@ -115,14 +115,14 @@ const About: React.FC = () => {
                   className={`font-bold text-sm ${pillar.accent} mb-6 uppercase tracking-wider`}>
                   {pillar.tagline}
                 </p>
-                <p className="text-gray-600 mb-8 text-sm leading-relaxed">
+                <p className="text-gray-600 mb-8 text-md leading-relaxed">
                   {pillar.description}
                 </p>
                 <ul className="space-y-3">
                   {pillar.points.map((point, pi) => (
                     <li
                       key={pi}
-                      className="flex items-start gap-3 text-xs font-semibold text-gray-500">
+                      className="flex items-start gap-3 text-sm font-semibold text-gray-500">
                       <span className={`${pillar.accent} mt-0.5`}>•</span>
                       {point}
                     </li>
@@ -208,7 +208,7 @@ const About: React.FC = () => {
             Pakistani students stay connected with global educational standards.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-0 items-center justify-center">
             {TEAM.map((member) => (
               <div key={member.name} className="group">
                 <div className="mb-6 relative mx-auto w-full aspect-square max-w-[200px] rounded-[40px] overflow-hidden shadow-xl group-hover:shadow-indigo-200 group-hover:-translate-y-2 transition-all duration-500">
@@ -257,9 +257,7 @@ const About: React.FC = () => {
                   <p className="text-xs font-bold uppercase tracking-widest text-indigo-300">
                     AFFILIATION 02
                   </p>
-                  <p className="font-bold">
-                    International Linguistic Association
-                  </p>
+                  <p className="font-bold">Editura SIGMA</p>
                 </div>
               </div>
             </div>
